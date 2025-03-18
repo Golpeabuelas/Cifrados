@@ -3,40 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Vigenère</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/compartidos.css">
 </head>
 <body>
-    <h1>Cifrado Vigenere</h1>
+    <div class="main_container">
+        <div class="encryption_container">
+            <h3 class="subtitle">Mensaje</h3>
+            <textarea class="original_message" id="mensaje"></textarea>
 
-    <h2>Mensaje</h2>
-    <textarea name="" id="">
+            <h3 class="subtitle">Clave de operación</h3>
+            <textarea class="key_input" id="clave"></textarea>
 
-    </textarea>
+            <div class="buttons_container">
+                <button class="action_button" id="cifrar">Cifrar</button>
+                <button class="action_button" id="descifrar">Descifrar</button>
+                <button class="action_button" id="limpiar">Limpiar</button>
+            </div>
+        </div>
 
-    <h2>Clave de operación</h2>
-    <textarea name="" id="">
-
-    </textarea>
-
-    <button>
-        Cifrar
-    </button>
-    <button>
-        Descifrar
-    </button>
-    <button>
-        Limpiar campos
-    </button>
-    <h2>Resultado</h2>
-
-    <a href="./index.html">
-        <button>
-            Regresar
-        </button>
-    </a>
+        <div class="result_container">
+            <h3 class="subtitle">Resultado</h3>
+            <textarea class="encrypted_message" id="resultado" readonly></textarea>
+        </div>
+    </div>
 </body>
 </html>
+
+<script src="../javascript/vigenere.js"></script>
